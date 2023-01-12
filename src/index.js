@@ -47,8 +47,6 @@ function onInputCountry() {
     .then(countrys => {
       if (countrys.length > 10) {
         Notify.info('Too many matches found. Please enter a more specific name.');
-        refs.countryInfo.innerHTML = '';
-        refs.countryList.innerHTML = '';
         return;
       }
 
